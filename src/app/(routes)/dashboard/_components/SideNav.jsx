@@ -10,7 +10,7 @@ import {
 } from 'lucide-react';
 
 import { UserButton } from "@clerk/nextjs";
-import { usePathName } from "next/navigation";
+import { usePathname } from "next/navigation";
 import Link from "next/link";
 
 function SideNav() {
@@ -47,7 +47,7 @@ function SideNav() {
         },
     ];
 
-    const path = usePathName();
+    const path = usePathname();
 
     useEffect(() => {
         console.log(path)
@@ -73,3 +73,5 @@ function SideNav() {
         </div>
     )
 }
+
+export default SideNav;
